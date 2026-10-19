@@ -1,0 +1,124 @@
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  margin: 0;
+}
+
+.hero {
+  min-height: 680px;
+  background-color: #0b2545;
+  background-image: url("https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=2000&q=85");
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 180ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #f4a300;
+}
+
+.service-card,
+.value-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  background: #fff;
+  padding: 1.75rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.service-card:hover,
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgb(11 37 69 / 9%);
+}
+
+.service-number {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  color: #1c6ea4;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.service-card h3,
+.value-card h3 {
+  color: #0b2545;
+  font-size: 1.2rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.service-card p,
+.value-card p {
+  margin-top: 0.75rem;
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.form-label {
+  display: block;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0b2545;
+  font-size: 0.95rem;
+  font-weight: 650;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 0.85rem 1rem;
+  color: #1e293b;
+  font: inherit;
+}
+
+.form-input:focus-visible {
+  outline: 2px solid #1c6ea4;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: #0b2545;
+  background-image: url("https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=2000&q=85");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Short laptop screens */
+@media (min-width: 768px) and (max-height: 750px) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+}
