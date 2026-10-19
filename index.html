@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Matrix Oilfield Services Limited provides well services, pipeline integrity, HSE consulting and technical staffing across the Niger Delta."
+  />
+
+  <title>Matrix OSL | Reliable Oilfield Services</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: "#0B2545",
+            steel: "#1C6EA4",
+            amber: "#F4A300",
+            mist: "#F2F2F2"
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body class="font-sans text-slate-800 antialiased">
+
+  <!-- Header -->
+
+    <header class="bg-navy text-white relative z-50 ">
+    <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5"
+        aria-label="Main navigation"
+    >
+        <a href="#home" class="text-xl font-extrabold tracking-wide">
+        MATRIX <span class="text-amber">| OSL</span>
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button
+        id="menu-toggle"
+        class="rounded border border-white/30 px-3 py-2 md:hidden"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        aria-label="Open navigation menu"
+        >
+        <span id="menu-icon">☰</span>
+        </button>
+
+        <!-- Mobile overlay -->
+        <div
+        id="menu-overlay"
+        class="fixed inset-0 bg-black/50 opacity-0 invisible
+                transition-opacity duration-300 md:hidden"
+        ></div>
+
+        <!-- Navigation panel -->
+        <div
+        id="nav-links"
+        class="fixed right-0 top-0 z-50 flex h-dvh w-4/5 max-w-sm
+                flex-col gap-7 bg-navy p-8 pt-24 shadow-2xl
+                translate-x-full transition-transform duration-300 ease-in-out
+                md:static md:z-auto md:h-auto md:w-auto md:max-w-none
+                md:translate-x-0 md:flex-row md:items-center
+                md:gap-5 md:bg-transparent md:p-0 md:shadow-none" 
+        >
+        <!-- Close button -->
+        <button
+            id="menu-close"
+            class="absolute right-6 top-5 rounded border border-white/30
+                px-3 py-2 md:hidden"
+            aria-label="Close navigation menu"
+        >
+            ✕
+        </button>
+
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#hse" class="nav-link">HSE & Safety</a>
+        <a href="#values" class="nav-link">Our Values</a>
+
+        <a
+            href="#contact"
+            class="rounded bg-amber px-5 py-3 font-bold text-navy
+                transition hover:bg-white"
+        >
+            Contact Us
+        </a>
+        </div>
+    </nav>
+    </header>
+
+
+  <main>
+    <!-- Hero -->
+
+    <section
+    id="home"
+    class="hero relative flex min-h-screen items-center overflow-hidden md:min-h-screen"
+    >
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-navy/75"></div>
+
+    <!-- Hero content -->
+    <div
+        class="relative mx-auto w-full max-w-7xl px-5 py-16 text-white sm:px-8 md:px-10 md:py-20 lg:px-12"
+    >
+        <p
+        class="mb-5 text-xs font-bold uppercase tracking-[0.18em] text-amber sm:text-sm"
+        >
+        Oilfield Services · Port Harcourt, Nigeria
+        </p>
+
+        <h1
+        class="max-w-4xl text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+        >
+        Engineering Reliability.
+        <span class="mt-2 block text-amber">
+            Safety Without Compromise.
+        </span>
+        </h1>
+
+        <p
+        class="mt-6 max-w-2xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8"
+        >
+        Dependable well services, pipeline integrity and HSE consulting
+        for oil and gas operators and EPC contractors across the Niger Delta.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
+        <a
+            href="#services"
+            class="rounded bg-amber px-6 py-4 text-center font-bold text-navy transition hover:bg-white sm:px-7"
+        >
+            Explore Our Services
+        </a>
+
+        <a
+            href="#contact"
+            class="rounded border border-white px-6 py-4 text-center font-bold transition hover:bg-white hover:text-navy sm:px-7"
+        >
+            Speak With Our Team
+        </a>
+        </div>
+
+        <!-- Trust indicators -->
+        <div
+        class="mt-10 grid max-w-3xl grid-cols-1 gap-5 border-t border-white/20 pt-7 sm:grid-cols-3 sm:gap-6 md:mt-12"
+        >
+        <div class="border-l-2 border-amber pl-4">
+            <p class="text-xl font-bold sm:text-2xl">ISO 9001</p>
+            <p class="mt-1 text-sm text-white/80">
+            Quality Management
+            </p>
+        </div>
+
+        <div class="border-l-2 border-amber pl-4">
+            <p class="text-xl font-bold sm:text-2xl">ISO 45001</p>
+            <p class="mt-1 text-sm text-white/80">
+            Occupational HSE
+            </p>
+        </div>
+
+        <div class="border-l-2 border-amber pl-4">
+            <p class="text-xl font-bold sm:text-2xl">1,200+</p>
+            <p class="mt-1 text-sm text-white/80">
+            Incident-free field days
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="mx-auto max-w-7xl px-6 py-20">
+      <p class="font-bold uppercase tracking-widest text-steel">Who We Are</p>
+
+      <div class="mt-4 grid gap-8 md:grid-cols-2 md:items-start">
+        <h2 class="text-3xl font-extrabold leading-tight text-navy md:text-4xl">
+          Local knowledge. Certified people. Dependable delivery.
+        </h2>
+
+        <p class="text-lg leading-8 text-slate-600">
+          Matrix Oilfield Services Limited is an independently owned oilfield
+          services company headquartered in Port Harcourt, Nigeria. We support
+          operators and EPC contractors across the Niger Delta with well
+          services, pipeline integrity and HSE advisory support. Our field
+          teams combine international certification standards with knowledge
+          of local operating conditions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-white px-6 py-20 md:py-28">
+    <div class="mx-auto max-w-7xl">
+        <!-- Section Heading -->
+        <div class="max-w-3xl">
+        <p class="font-bold uppercase tracking-[0.18em] text-steel">
+            What We Do
+        </p>
+
+        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy md:text-5xl">
+            Our Service Offerings
+        </h2>
+
+        <p class="mt-5 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
+            Technical support designed around operational requirements,
+            equipment readiness and safety performance.
+        </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:gap-12">
+        <!-- Service 1 -->
+        <article class="group">
+            <img
+            src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1000&q=85"
+            alt="Oilfield operations and well services"
+            class="h-56 w-full rounded-lg object-cover sm:h-64"
+            loading="lazy"
+            />
+
+            <div class="pt-5">
+            <h3 class="text-xl font-bold text-navy">
+                Well Services &amp; Workover
+            </h3>
+
+            <p class="mt-3 leading-7 text-slate-600">
+                Intervention, completion support and workover supervision
+                for onshore and swamp wells, delivered by certified personnel
+                following strict operational safety protocols.
+            </p>
+
+            <a
+                href="#contact"
+                class="group mt-4 inline-flex items-center gap-2 font-bold text-steel transition-colors hover:text-navy"
+            >
+                Enquire
+                <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </a>
+            </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="group">
+            <img
+            src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1000&q=85"
+            alt="Industrial pipeline infrastructure"
+            class="h-56 w-full rounded-lg object-cover sm:h-64"
+            loading="lazy"
+            />
+
+            <div class="pt-5">
+            <h3 class="text-xl font-bold text-navy">
+                Pipeline Integrity &amp; Maintenance
+            </h3>
+
+            <p class="mt-3 leading-7 text-slate-600">
+                Inspection, corrosion monitoring and repair programs designed
+                to support pipeline integrity, regulatory compliance and
+                reduced unplanned shutdowns.
+            </p>
+
+            <a
+                href="#contact"
+                class="group mt-4 inline-flex items-center gap-2 font-bold text-steel transition-colors hover:text-navy"
+            >
+                Enquire
+                <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </a>
+            </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="group">
+            <img
+            src="images/engineers-team-working.jpg"
+            alt="Safety planning and risk assessment"
+            class="h-56 w-full rounded-lg object-cover sm:h-64"
+            loading="lazy"
+            />
+
+            <div class="pt-5">
+            <h3 class="text-xl font-bold text-navy">
+                HSE &amp; Risk Consulting
+            </h3>
+
+            <p class="mt-3 leading-7 text-slate-600">
+                Site risk assessments, permit-to-work systems and HSE training
+                tailored to each client's operating environment and risk profile.
+            </p>
+
+            <a
+                href="#contact"
+                class="group mt-4 inline-flex items-center gap-2 font-bold text-steel transition-colors hover:text-navy"
+            >
+                Enquire
+                <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </a>
+            </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="group">
+            <img
+            src="images/call-center-agent.jpg"
+            alt="Industrial equipment and technical operations"
+            class="h-56 w-full rounded-lg object-cover sm:h-64"
+            loading="lazy"
+            />
+
+            <div class="pt-5">
+            <h3 class="text-xl font-bold text-navy">
+                Equipment Rental &amp; Logistics
+            </h3>
+
+            <p class="mt-3 leading-7 text-slate-600">
+                Well-serviced equipment available for rental, supported by
+                logistics capabilities for moving personnel and materials
+                across onshore and swamp locations.
+            </p>
+
+            <a
+                href="#contact"
+                class="group mt-4 inline-flex items-center gap-2 font-bold text-steel transition-colors hover:text-navy"
+            >
+                Enquire
+                <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </a>
+            </div>
+        </article>
+        <!-- Service 5 -->
+        <article class="group">
+            <img
+            src="images/people-looking-supplies.jpg"
+            alt="Technical professionals working together"
+            class="h-56 w-full rounded-lg object-cover sm:h-64"
+            loading="lazy"
+            />
+
+            <div class="pt-5">
+            <h3 class="text-xl font-bold text-navy">
+                Manpower &amp; Technical Staffing
+            </h3>
+
+            <p class="mt-3 leading-7 text-slate-600">
+                Vetted, certified technical personnel for short-term call-outs
+                and longer-term deployments, helping clients scale field capacity
+                without compromising competence or safety.
+            </p>
+
+            <a
+                href="#contact"
+                class="group mt-4 inline-flex items-center gap-2 font-bold text-steel transition-colors hover:text-navy"
+            >
+                Enquire
+                <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </a>
+            </div>
+        </article>
+
+
+        </div>
+    </div>
+    </section>
+
+
+    <!-- HSE -->
+
+<section id="hse" class="bg-navy px-6 py-20 text-white md:py-28">
+  <div class="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:items-start md:gap-16">
+
+    <!-- HSE Introduction -->
+    <div>
+      <p class="font-bold uppercase tracking-widest text-amber">
+        Health, Safety &amp; Environment
+      </p>
+
+      <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+        Zero Compromise. Every Operation.
+      </h2>
+
+      <p class="mt-6 leading-8 text-white/80">
+        Our goal-zero approach is supported by daily toolbox talks,
+        documented permit-to-work systems and stop-work authority
+        for every person on site, regardless of role or seniority.
+      </p>
+
+      <p class="mt-4 leading-8 text-white/80">
+        Our HSE function reports directly to executive management,
+        independently of operations, so safety decisions are not
+        subordinated to schedule or cost pressures.
+      </p>
+      <div class="mt-10">
+        <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"
+                alt="Industrial workers following safety practices on a worksite"
+                class="h-72 w-full rounded-lg object-cover sm:h-96 md:h-[460px]"
+                loading="lazy"
+                />
+
+      </div>
+
+      
+    </div>
+
+    <!-- HSE Highlights List -->
+    <div class="border-t border-white/20">
+
+      <article class="border-b border-white/20 py-6">
+        <p class="text-2xl font-extrabold text-amber">
+          ISO 45001
+        </p>
+
+        <p class="mt-2 leading-7 text-white/80">
+          Certified occupational health and safety management.
+        </p>
+      </article>
+
+      <article class="border-b border-white/20 py-6">
+        <p class="text-2xl font-extrabold text-amber">
+          1,200+
+        </p>
+
+        <p class="mt-2 leading-7 text-white/80">
+          Incident-free field days reported by the company.
+        </p>
+      </article>
+
+      <article class="border-b border-white/20 py-6">
+        <h3 class="text-lg font-bold text-white">
+          Stop-work Authority
+        </h3>
+
+        <p class="mt-2 leading-7 text-white/80">
+          Every team member has the authority to stop work when
+          a safety concern arises.
+        </p>
+      </article>
+
+      <article class="border-b border-white/20 py-6">
+        <h3 class="text-lg font-bold text-white">
+          Daily Toolbox Talks
+        </h3>
+
+        <p class="mt-2 leading-7 text-white/80">
+          Regular safety briefings help teams identify hazards
+          and understand operational risks before work begins.
+        </p>
+      </article>
+
+      <article class="border-b border-white/20 py-6">
+        <h3 class="text-lg font-bold text-white">
+          Permit-to-Work Systems
+        </h3>
+
+        <p class="mt-2 leading-7 text-white/80">
+          Documented work authorization procedures support
+          safe and controlled field operations.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Vision, Mission and Values -->
+
+
+    <section id="values" class="mx-auto max-w-7xl px-6 py-20">
+    <p class="font-bold uppercase tracking-widest text-steel">
+        What Guides Us
+    </p>
+
+    <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy md:text-4xl">
+        Our Vision, Mission &amp; Values
+    </h2>
+
+    <!-- Vision and Mission -->
+    <div class="mt-8 grid gap-8 border-y border-slate-200 py-8 md:grid-cols-2 md:gap-12">
+        <article>
+        <h3 class="text-xl font-bold text-navy">Our Vision</h3>
+
+        <p class="mt-3 leading-7 text-slate-600">
+            To be the most trusted independent oilfield services partner
+            in the Niger Delta, recognized for our safety record and
+            technical performance.
+        </p>
+        </article>
+
+        <article>
+        <h3 class="text-xl font-bold text-navy">Our Mission</h3>
+
+        <p class="mt-3 leading-7 text-slate-600">
+            To deliver dependable, safety-first oilfield services through
+            certified people, disciplined processes and equipment
+            maintained to international standards.
+        </p>
+        </article>
+    </div>
+
+    <!-- Core Values List -->
+    <div class="mt-12">
+        <h3 class="text-sm font-bold uppercase tracking-widest text-steel">
+        Our Core Values
+        </h3>
+
+        <div class="mt-5 grid gap-x-12 sm:grid-cols-2">
+        <article class="flex gap-4 border-t border-slate-200 py-6">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-black"></span>
+
+            <div>
+            <h4 class="text-lg font-bold text-navy">Safety First</h4>
+
+            <p class="mt-2 leading-7 text-slate-600">
+                An uncompromising, goal-zero approach to incidents.
+            </p>
+            </div>
+        </article>
+
+        <article class="flex gap-4 border-t border-slate-200 py-6">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-black"></span>
+
+            <div>
+            <h4 class="text-lg font-bold text-navy">Integrity</h4>
+
+            <p class="mt-2 leading-7 text-slate-600">
+                Honest commitments and transparent reporting.
+            </p>
+            </div>
+        </article>
+
+        <article class="flex gap-4 border-t border-slate-200 py-6">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-black"></span>
+
+            <div>
+            <h4 class="text-lg font-bold text-navy">
+                Technical Excellence
+            </h4>
+
+            <p class="mt-2 leading-7 text-slate-600">
+                Investment in certification, training and equipment.
+            </p>
+            </div>
+        </article>
+
+        <article class="flex gap-4 border-t border-slate-200 py-6">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-black"></span>
+
+            <div>
+            <h4 class="text-lg font-bold text-navy">Reliability</h4>
+
+            <p class="mt-2 leading-7 text-slate-600">
+                The right people and equipment, delivered on schedule.
+            </p>
+            </div>
+        </article>
+
+        <article class="flex gap-4 border-t border-slate-200 py-6">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-black"></span>
+
+            <div>
+            <h4 class="text-lg font-bold text-navy">
+                Respect for People &amp; Environment
+            </h4>
+
+            <p class="mt-2 leading-7 text-slate-600">
+                Protecting our people, communities and operating environments.
+            </p>
+            </div>
+        </article>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="bg-mist px-6 py-20">
+      <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-2">
+
+        <div>
+          <p class="font-bold uppercase tracking-widest text-steel">
+            Get In Touch
+          </p>
+
+          <h2 class="mt-4 text-3xl font-extrabold text-navy md:text-4xl">
+            Let's discuss your operational requirements.
+          </h2>
+
+          <p class="mt-5 leading-8 text-slate-600">
+            Contact our team to discuss oilfield services, pipeline
+            integrity support, HSE consulting or technical staffing.
+          </p>
+
+          <div class="mt-8 space-y-5">
+            <div>
+              <p class="font-bold text-navy">Office</p>
+              <p class="mt-1 text-slate-600">
+                Trans-Amadi Industrial Layout, Port Harcourt,
+                Rivers State, Nigeria
+              </p>
+            </div>
+
+            <div>
+              <p class="font-bold text-navy">Email</p>
+              <a class="text-steel hover:underline"
+                 href="mailto:info@Matrixosl.example">
+                info@Matrixosl.example
+              </a>
+            </div>
+
+            <div>
+              <p class="font-bold text-navy">Phone</p>
+              <a class="text-steel hover:underline"
+                 href="tel:+2348000000000">
+                +234 800 000 0000
+              </a>
+            </div>
+
+            <p class="text-sm text-slate-500">
+              Contact person: Business Development Manager
+              (name available on request).
+            </p>
+          </div>
+        </div>
+
+        <form id="contact-form"
+          class="rounded-xl bg-white p-7 shadow-sm md:p-9">
+
+          <h3 class="text-xl font-bold text-navy">Send an enquiry</h3>
+
+          <label class="form-label" for="name">Full name</label>
+          <input class="form-input" id="name" name="name"
+            autocomplete="name" required />
+
+          <label class="form-label" for="email">Work email</label>
+          <input class="form-input" id="email" name="email"
+            type="email" autocomplete="email" required />
+
+          <label class="form-label" for="service">Service of interest</label>
+          <select class="form-input" id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Well Services & Workover</option>
+            <option>Pipeline Integrity & Maintenance</option>
+            <option>HSE & Risk Consulting</option>
+            <option>Equipment Rental & Logistics</option>
+            <option>Manpower & Technical Staffing</option>
+          </select>
+
+          <label class="form-label" for="message">How can we help?</label>
+          <textarea class="form-input" id="message" name="message"
+            rows="4" required></textarea>
+
+          <button type="submit"
+            class="mt-5 w-full rounded bg-amber px-6 py-4 font-bold text-navy hover:bg-navy hover:text-white">
+            Prepare Enquiry
+          </button>
+
+          <p id="form-status" class="mt-4 text-sm"
+             role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy px-6 py-8 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <a href="#home" class="font-extrabold tracking-wide">
+        MATRIX <span class="text-amber">| OSL</span>
+      </a>
+
+      <p class="text-sm text-white/70">
+        Engineering reliability. Safety without compromise.
+      </p>
+
+      <p class="text-sm text-white/70">
+        © <span id="year"></span> Matrix Oilfield Services Limited.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
